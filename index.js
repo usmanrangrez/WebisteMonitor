@@ -53,7 +53,7 @@ async function checkWebsite() {
 }
 
 // ⏰ Cron job runs every 1 minute
-cron.schedule('*/5 * * * *', () => {
+cron.schedule("*/4 * * * *", () => {
   checkWebsite();
 });
 
