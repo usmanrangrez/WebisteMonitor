@@ -34,7 +34,7 @@ async function checkWebsite() {
 
       await transporter.sendMail({
         from: `"Tracker Bot 👀" <${EMAIL_USER}>`,
-        to: EMAIL_USER,
+        to: "ur8067@srmist.edu.in",
         subject: '🆕 Housing Website Update Detected!',
         text: `🚨 A change was detected at:\nhttps://www.stwdo.de/wohnen/aktuelle-wohnangebote`,
       });
