@@ -63,10 +63,14 @@ async function hitMonitorAPI() {
   }
 }
 
-// ⏰ Cron job: Check housing site every 4 minutes
-cron.schedule("*/4 * * * *", () => {
+// // ⏰ Cron job: Check housing site every 4 minutes
+// cron.schedule("*/4 * * * *", () => {
+//   checkWebsite();
+// });
+
+setInterval(() => {
   checkWebsite();
-});
+}, 30 * 1000); // 30 sec
 
 // ⏱️ Cron job: Hit monitor API every 2 minutes
 cron.schedule("*/2 * * * *", () => {
