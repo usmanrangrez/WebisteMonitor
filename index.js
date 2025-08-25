@@ -70,7 +70,7 @@ async function hitMonitorAPI() {
 
 setInterval(() => {
   checkWebsite();
-}, 15 * 1000); // 15 sec
+}, 4 * 1000); // 4 sec
 
 
 // ⏱️ Cron job: Hit monitor API every 2 minutes
